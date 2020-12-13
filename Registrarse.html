@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Registro.css">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Registro</title>
+</head>
+<body>
+
+<!--Inicio del Navbar-->
+<div class="container-fluid">
+    <nav id="menu" class="navbar navbar-expand-lg navbar-dark fixed-top bg-personalizado">
+        <a class="navbar-brand ml-3" href="index.html">
+            <img src="img/sabila.png" width="30" height="30">
+        </a>
+
+        <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" >
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active mr-5 ml-3" href="index.html">Inicio</a>
+                <a class="nav-item nav-link active mr-5 ml-3" href="index.html">Productos</a>
+                <a class="nav-item nav-link active mr-5 ml-3" href="index.html">¿Quienes Somos?</a>
+                <a class="nav-item nav-link active mr-5 ml-3" href="index.html">Contacto</a>
+                <a class="nav-item nav-link active mr-5 ml-3" href="Perfil.php">Perfil</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<style>
+    .bg-personalizado{
+    transition: all 1s ease;
+    background-color: #387224;
+}
+</style>
+<!--Fin del Navbar-->
+
+
+<!--Inicio formulario -->
+<form action="valRegistro.php" method="POST" id="formulario">
+    <div class="divimagen mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8 divcomoseria">
+                    <center>
+                        <h1 class="text-white mt-4">Formulario de Registro</h1>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur.</p>
+                    </center>
+                    <div class="row">
+                        <div class="col-6">
+                            <input name="nombre" id="nombre" class="input mt-3" type="text" placeholder="Nombres">
+                            <br>
+                            <input name="apellido" id="apellido" class="input mt-5" type="text" placeholder="Apellidos">
+                            <br>
+                            <input name="correo" id="correo" class="input mt-5" type="text" placeholder="Correo">
+                            <br>
+                            <input name="pass" id="pass" class="input mt-5" type="password" placeholder="Contraseña">
+                        </div>
+                        <div class="col-6">
+                            <input name="direccion" id="direccion" class="input mt-3" type="text" placeholder="Direccion">
+                            <br>
+                            <input name="telefono" id="telefono" class="input mt-5" type="text" placeholder="Telefono">
+                            <br>
+                            <input name="rol" class="input mt-5" type="text" placeholder="Codigo empresarial">
+                        </div>
+                    </div>
+                    <center>
+                        <input id="enviar" name="enviar" type="submit" class="boton btn-block mt-5">
+                        <p id="error" class="error"></p>
+                    </center>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </div>
+</form>
+<!--Final formulario -->
+
+<script src="validar.js"></script>
+</body>
+</html>
+
+
